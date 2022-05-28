@@ -13,7 +13,7 @@ int main(void)
   char ch = 'a';
 
   while (ch!= 'q'){
-  scanf("%c", ch);
+  scanf("%c", &ch);
   push(ch);
   print();
   }
@@ -33,5 +33,5 @@ void print(void){
     int i;
 
     for( i=0; i< top; i++) 
-    printf ("%d" , stack[i]);
+    printf ("%c" , stack[i]);
 }
